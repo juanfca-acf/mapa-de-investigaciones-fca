@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+	<script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/leaflet.markercluster.js'></script>
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.css' rel='stylesheet' />
+	<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v1.0.0/MarkerCluster.Default.css' rel='stylesheet' />
+	<link href='./main.css' rel='stylesheet' />
+	<title>Map Box</title>
+</head>
+<body>
+	<div class="main">
+		<header class="header">
+			<h1>
+				INVESTIGACIONES FCA - 2023
+			</h1>
+		</header>
+		<main class="row row-reverse-mobile">
+			<div class="sidebar">
+				<form class="map-search-form" onsubmit="event.preventDefault();" role="search">
+					<label for="search" aria-hidden="true">Enter a place, zipcode, or name...</label>
+					<div class='row input-row'>
+						<input id="search"
+									 title="Enter a place, zipcode, or name..."
+									 class="map-search-input"
+									 type="search" 
+									 placeholder="Enter a place, zipcode, or name..." 
+									 autofocus required />
+						<a class="map-clear-btn" href=""></a> 
+						<button class="map-search-btn" type="submit">SEARCH</button> 
+					</div>
+					<div class='map-results-info row input-row'>
+						No Search Results
+					</div>
+				</form>
+				<ul class="map-search-results"></ul>
+			</div>
+			<div class="map-ctr">
+				<div id="map"></div>
+			</div>
+		</main>
+		<footer class="footer">
+		<a class="attribution" 
+			href="https://www.svgrepo.com/svg/2767/heart" 
+			title="maps and location icons">
+			Map icon by https://www.svgrepo.com/svg/2767/heart
+		</a>
+		<a class="attribution" 
+			href="https://thenounproject.com/icon/heart-map-pin-390034/" 
+			title="maps and location icons">
+			Heart Map Pin by Creative Stall from NounProject.com
+		</a>
+	</footer>
+</div>
+<script src="./main.js" ></script>
+</body>
+</html>
