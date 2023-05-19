@@ -4,9 +4,9 @@ const addresses = {
   }
  
   async function fetchGoogleSheetData() {
-    const spreadsheetId = "1qxczjDDJH5d-HVmta4M6-EaLrlkVKF4uBOBLE1-o4HA";
+    const spreadsheetId = "ssID";
     const range = "Sheet1!A2:Z"; // range of data to retrieve
-    const apiKey = "";
+    const apiKey = "apiKey";
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
  
     const response = await fetch(url);
