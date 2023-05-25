@@ -5,7 +5,7 @@ const addresses = {
  
   async function fetchGoogleSheetData() {
     const spreadsheetId = "ssID";
-    const range = "Sheet1!A2:Z"; // range of data to retrieve
+    const range = "Sheet1!DATA RANGE"; // range of data to retrieve
     const apiKey = "apiKey";
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
  
@@ -213,7 +213,7 @@ const addresses = {
  
   class SearchMap {
     static mapCenter = [-22.11287532271001,-56.25207694771304];
-    ACCESS_TOKEN = 'pk.eyJ1IjoidGhpbmtmaXJzdCIsImEiOiJjanVrM21pcWwxbzkxNGRudnUwMHkyMG0wIn0.DPaK0L2_D5ShBY0GH9_oIQ';
+    ACCESS_TOKEN = 'your ACCESS TOKEN';
     zoom = {
       mobile: 6.5,
       desktop: 6.4,
